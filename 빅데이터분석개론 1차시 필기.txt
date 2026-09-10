@@ -1,0 +1,24 @@
+빅데이터분석개론 1차시 필기
+
+AGI: Artificial General Intelligence
+ML: 지도학습 + 비지도학습
+DL: Neural Network를 이용한 학습
+
+순전파(Forward Propagation): 입력 데이터를 받아 예측값을 출력하는 과정. 입력층 -> 은닉층 -> 출력층
+역전파(Back Propagation): 예측값과 실제 정답의 오차를 이용해 가중치를 수정하는 과정. 출력층 -> 입력층
+
+Gradient: 자동 미분 기능. 손실 최솟값을 구하기 위해 필요
+
+TensorFlow, Keras: Google 제작
+PyTorch: Meta 제작
+
+CNN(Convolutional Neural Network): 합성곱 신경망
+RNN(Recurrent Neural Network): 순환 구조(이전 시점의 기억을 다음 시점의 은닉층으로 넘기는 구조) 기울기 소실 문제 발생
+LSTM(Long-Short Term Memory): 은닉 상태 + 셀 상태. 기울기 소실 문제가 해결됨. 하지만 병렬 작업이 불가능하다는 한계는 해결되지 않음
+트랜스포머: LSTM의 병렬 처리 문제를 해결함
+
+선형 변환: z = Wx + b (W: 가중치, b: 편향)
+
+활성화 함수: Sigmoid, tanh, ReLU etc.
+
+일반적인 딥러닝 학습 루프 안에서는 매 반복(Iteration)마다 반드시 기울기를 0으로 초기화해주어야 모델이 망가지지 않는다.
