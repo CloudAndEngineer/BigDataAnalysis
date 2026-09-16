@@ -42,6 +42,7 @@ model = nn.Sequential(
 # 모델은 nn.Sequential을 사용하여 순차적으로 구성됨
 
 # nn.Linear(2, 1): 입력 차원이 2이고 출력 차원이 1인 선형 계층
+# 입력 데이터의 차원의 개수는 상관없다. 마지막 차원의 크기만 맞으면 됨. (batch, 2) -> (batch, 1)
 # nn.Sigmoid(): 시그모이드 활성화 함수 적용
 
 criterion = nn.BCELoss()
