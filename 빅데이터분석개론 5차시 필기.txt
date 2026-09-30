@@ -1,0 +1,11 @@
+빅데이터분석개론 5차시 필기
+
+인코더 기반 모델: BERT etc.
+디코더 기반 모델: ChatGPT, Llama, Qwen etc.
+
+Zero shot prompt
+One shot prompt etc.
+
+과제: p. 298~299
+
+복잡한 식은 제외하고 간단한 식은 시험에 출제
