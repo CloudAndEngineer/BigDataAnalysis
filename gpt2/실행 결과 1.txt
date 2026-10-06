@@ -1,0 +1,90 @@
+GPT-2 모델 로드 완료
+
+======================================================================
+2. 입력 문장 전처리
+======================================================================
+입력 문장: Artificial intelligence will change the future because
+Token ID: tensor([[8001, 9542, 4430,  481, 1487,  262, 2003,  780]])
+Token 개수: 8
+
+======================================================================
+3. 기본 생성 결과
+======================================================================
+Artificial intelligence will change the future because it will be able to predict what people will do and what they will do differently.
+
+The future is not a simple one. It is a complex one.
+
+The future is not a simple one. It is a complex one.
+
+The
+
+======================================================================
+4. 샘플링 설정 비교
+======================================================================
+
+[do_sample=False]
+가장 확률이 높은 토큰을 계속 선택합니다.
+
+실행 1:
+Artificial intelligence will change the future because it will be able to predict what people will do and what they will do differently.
+
+The future is not a simple one. It is a complex one.
+
+The future is not a simple one. It is a complex one.
+
+The
+
+실행 2:
+Artificial intelligence will change the future because it will be able to predict what people will do and what they will do differently.
+
+The future is not a simple one. It is a complex one.
+
+The future is not a simple one. It is a complex one.
+
+The
+
+
+[do_sample=True]
+확률 분포에 따라 토큰을 샘플링합니다.
+
+실행 1:
+Artificial intelligence will change the future because of what it means to us. And when we are not only aware of what we are doing but also what weare doing not just in terms of our thoughts, but in terms of the data that we are creating, how will we be able to predict what
+
+실행 2:
+Artificial intelligence will change the future because it is based on information and will take advantage of new technologies, such as artificial intelligence, that are more flexible and more accurate.
+
+But artificial intelligence has not yet been proven to be the "super-intelligent" that is predicted by science.
+
+
+======================================================================
+5. Seed 고정 실험
+======================================================================
+
+[Seed를 매번 42로 고정]
+
+실행 1:
+Artificial intelligence will change the future because it will be a tool that you can use to solve problems.
+
+For example, we can learn from mistakes and learn to fix them. We can learn to use our intelligence to improve our skills. We can learn to read a book or watch a movie
+
+실행 2:
+Artificial intelligence will change the future because it will be a tool that you can use to solve problems.
+
+For example, we can learn from mistakes and learn to fix them. We can learn to use our intelligence to improve our skills. We can learn to read a book or watch a movie
+
+
+[Seed를 고정하지 않은 경우]
+
+실행 1:
+Artificial intelligence will change the future because we can't just look at the future and say, 'Oh, this is how we're going to go about it. What do we do with this?' We have to create something that we're excited about."
+
+The next stage of the work,
+
+실행 2:
+Artificial intelligence will change the future because we need to do it faster, smarter and more accurately.
+
+For the last few years, AI has been a field that has been largely ignored. It has been neglected, and it has been ignored for many years. But, as we have seen,
+
+======================================================================
+실험 완료
+======================================================================

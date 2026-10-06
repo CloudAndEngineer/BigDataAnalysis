@@ -1,12 +1,12 @@
 import torch
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
+from transformers import GPT2LMHeadModel, GPT2Tokenizer, GenerationConfig
 
 
 # ============================================================
 # 1. 모델 및 토크나이저 로드
 # ============================================================
 
-MODEL_NAME = "gpt2"
+MODEL_NAME = "openai-community/gpt2" # Error occurs when using "gpt2" as the model name. The error message is: "Could not load model weights from https://huggingface.co/gpt2/resolve/main/pytorch_model.bin. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True. Otherwise, make sure you have the correct file."
 
 # CUDA GPU를 사용할 수 있으면 GPU, 아니면 CPU 사용
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -17,7 +17,7 @@ print("=" * 70)
 print(f"사용 장치: {device}")
 
 tokenizer = GPT2Tokenizer.from_pretrained(MODEL_NAME)
-model = GPT2LMHeadModel.from_pretrained(MODEL_NAME)
+model = GPT2LMHeadModel.from_pretrained(MODEL_NAME) # Got in trouble loading model weights from https://huggingface.co/gpt2/resolve/main/pytorch_model.bin. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True. Otherwise, make sure you have the correct file.
 
 # 모델을 CPU 또는 GPU로 이동
 model = model.to(device)
